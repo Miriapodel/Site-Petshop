@@ -1,0 +1,506 @@
+body{
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
+    grid-template-rows: 0.7fr 7fr 0.7fr;
+    grid-template-areas: "header" "main" "footer";
+
+}
+
+label{
+    display: block;
+    margin: 10px;
+    font-size: 2vw;
+}
+
+#reviewuri
+{
+    font-size: 2vw;
+}
+
+input
+{
+    display: block;
+    margin: 10px;
+    height: 3vw;
+    width: 10vw;
+    font-size: 2vw;
+    background-color: #fefae0;
+}
+
+input::before
+{
+    content:"Acest camp este obligatoriu";
+}
+
+label::after
+{
+    content: "*";
+    color: red;
+}
+
+label::before
+{
+    content: "*";
+    color: red;
+}
+
+textarea
+{
+    font-size: 2vw;
+    background-color: #fefae0;
+}
+
+
+
+#submit
+{
+    margin-bottom: 10px;
+    background-color: #faedcd;
+    border-radius: 10%;
+}
+
+#submit:hover
+{
+    background-color: #d4a373;
+    transform: scale(0.95);
+}
+
+#mesaj
+{
+    width: 30vw;
+    height: 20vw;
+}
+
+form
+{
+    background-color: #e9edc9;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#reviewuri
+{
+    margin: 20px;
+}
+
+header
+{
+    background-color: #ccd5ae;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+main
+{
+    background-color: #fefae0;
+}
+
+footer
+{
+    background-color: #d4a373;
+    display: flex;
+    align-items: center;
+}
+
+li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover
+{
+    color: #606c38;
+}
+
+#logo
+{
+    width: 75px;
+    height: 75px;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+#logo2
+{
+    width: 100px;
+    height: 100px;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#meniu
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+#dropdown
+{
+    visibility: hidden;
+}
+
+#dd_content
+{
+    display: none;
+}
+
+#navigatie li{
+    display: inline;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 1.5vw;
+}
+
+#desc_fin
+{
+    display: inline;
+}
+
+#css
+{
+    margin-left: auto;
+}
+
+footer p a
+{
+    text-decoration: none;
+    color: #161616;
+
+    animation-name: color-fade;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes color-fade {
+    20%
+    {
+        color: #f72585;
+    }
+
+    40%
+    {
+        color: #7209b7;
+    }
+
+    60%
+    {
+        color: #3a0ca3;
+    }
+
+    80%
+    {
+        color: #4361ee;
+    }
+
+    100%
+    {
+        color: #4cc9f0;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    #navigatie li
+    {
+        font-size: 2vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    label
+    {
+        font-size: 3vw;
+    }
+
+    #reviewuri
+    {
+        font-size: 3vw;
+    }
+
+    input
+    {
+        height: 4vw;
+        width: 15vw;
+        font-size: 2.5vw;
+    }
+    textarea
+    {
+        font-size: 2.5vw;
+    }
+
+    #mesaj
+    {
+        width: 40vw;
+        height: 25vw;
+    }
+
+    #poze_animale
+    {
+        display: flex;
+        flex-direction: column;
+        column-count: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    #poze_branduri
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navigatie li
+    {
+        font-size: 3vw;
+    }
+
+    .animal
+    {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .brand
+    {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    h1
+    {
+        font-size: 5vw;
+    }
+
+    h2
+    {
+        font-size: 4vw;
+    }
+
+    body
+    {
+        grid-template-rows: 0.2fr 7fr 0.2fr;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    #navigatie li
+    {
+        font-size: 3.5vw;
+    }
+
+    #logo
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    label
+    {
+        font-size: 4vw;
+    }
+
+    #reviewuri
+    {
+        font-size: 4vw;
+    }
+
+    input
+    {
+        height: 5vw;
+        width: 20vw;
+        font-size: 4vw;
+    }
+
+    #mesaj
+    {
+        width: 45vw;
+        height: 30vw;
+    }
+
+    textarea
+    {
+        font-size: 4vw;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    #navigatie li
+    {
+        font-size: 4.5vw;
+    }
+
+    h1
+    {
+        font-size: 6vw;
+    }
+
+    h2
+    {
+        font-size: 5vw;
+    }
+
+    footer p
+    {
+        font-size: 3.5vw;
+    }
+
+    #logo2
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    #css
+    {
+        height: 8vw;
+        width: 12vw;
+    }
+    #dropdown
+    {
+        visibility: visible;
+        position: relative;
+        display: block;
+    }
+
+    #dropdown:hover #dd_content
+    {
+        display: block;
+    }
+
+    #dd_content
+    {
+        position: absolute;
+        background-color: #e9edc9;
+        padding: 10px;
+        border-radius: 20%;
+        box-shadow: 10px 5px 5px #ccd5ae;
+        font-size: 5vw;
+    }
+
+    #dd_content a:hover
+    {
+        color: #606c38;
+    }
+
+    #dd_content a
+    {   margin: 5px;
+
+    }
+
+    #acasa, #contact, #produse, #cos
+    {
+        visibility: hidden;
+    }
+
+}
+
+@media  screen and (max-width: 350px) {
+
+    #dd_content a
+    {
+        font-size: 6vw;
+    }
+
+    label
+    {
+        font-size: 7vw;
+    }
+
+    #reviewuri
+    {
+        font-size: 7vw;
+    }
+
+    input
+    {
+        height: 7vw;
+        width: 25vw;
+        font-size: 5vw;
+    }
+
+    #mesaj
+    {
+        width: 55vw;
+        height: 40vw;
+    }
+
+    textarea
+    {
+        font-size: 5vw;
+    }
+}
+
+@media  screen and (max-width: 280px) {
+
+    #dd_content a
+    {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    label
+    {
+        font-size: 1.5vw;
+    }
+
+    #reviewuri
+    {
+        font-size: 1.5vw;
+    }
+
+    input
+    {
+        height: 2vw;
+        width: 7vw;
+        font-size: 1.5vw;
+    }
+
+    textarea
+    {
+        font-size: 1.5vw;
+    }
+
+    #mesaj
+    {
+        width: 25vw;
+        height: 17vw;
+    }
+
+}
+
+input, #mesaj
+{
+    cursor: url("Poze/pencil-cursor.png"), auto;
+}
+
+#submit
+{
+    cursor: url("Poze/check-mark (1).png"), auto;
+}
+
+textarea
+{
+    resize: none;
+}

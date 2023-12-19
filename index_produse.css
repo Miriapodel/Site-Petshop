@@ -1,0 +1,383 @@
+body{
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
+    grid-template-rows: 0.7fr 7fr 0.7fr;
+    grid-template-areas: "header" "main" "footer";
+
+}
+
+header
+{
+    background-color: #ccd5ae;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+main
+{
+    background-color: #fefae0;
+
+
+}
+
+footer
+{
+    background-color: #d4a373;
+    display: flex;
+    align-items: center;
+}
+
+footer p a
+{
+    text-decoration: none;
+    color: #161616;
+
+    animation-name: color-fade;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes color-fade {
+    20% {
+        color: #f72585;
+    }
+
+    40% {
+        color: #7209b7;
+    }
+
+    60% {
+        color: #3a0ca3;
+    }
+
+    80% {
+        color: #4361ee;
+    }
+
+    100% {
+        color: #4cc9f0;
+    }
+}
+
+li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover
+{
+    color: #606c38;
+}
+
+#css
+{
+    margin-left: auto;
+}
+
+.produse
+{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: top;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20%;
+    width: 200px;
+    height: 230px;
+    margin: 15px;
+    box-shadow: 10px 5px 5px #c7c7c7;
+}
+
+.pret
+{
+    margin: 0;
+}
+
+.produse:hover
+{
+    transform: scale(1.1);
+}
+
+.butoane
+{
+    margin-bottom: 10px;
+    background-color: #faedcd;
+    border-radius: 10%;
+}
+
+.butoane:hover
+{
+    background-color: #d4a373;
+    transform: scale(0.95);
+}
+
+
+.captions
+{
+    display: flex;
+    justify-content: center;
+}
+.poze_produse
+{
+    width: 100px;
+    height: 100px;
+}
+
+#logo
+{
+    width: 75px;
+    height: 75px;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#logo2
+{
+    width: 100px;
+    height: 100px;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#meniu
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+#navigatie li{
+    display: inline;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 1.5vw;
+}
+
+#dropdown
+{
+    visibility: hidden;
+}
+
+#dd_content
+{
+    display: none;
+}
+
+#poze_animale
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#poze_branduri
+{
+    display: flex;
+    justify-content: space-around;
+}
+#desc_fin
+{
+    display: inline;
+}
+
+figure
+{
+    display: table;
+}
+figcaption
+{
+    vertical-align: middle;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+
+    body
+    {
+        grid-template-rows: 0.2fr 7fr 0.2fr;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    #navigatie li
+    {
+        font-size: 2vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #poze_animale
+    {
+        display: flex;
+        flex-direction: column;
+        column-count: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    #poze_branduri
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navigatie li
+    {
+        font-size: 3vw;
+    }
+
+    .animal
+    {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .brand
+    {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    h1
+    {
+        font-size: 5vw;
+    }
+
+    h2
+    {
+        font-size: 4vw;
+    }
+
+    body
+    {
+        grid-template-rows: 0.2fr 7fr 0.2fr;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    #navigatie li
+    {
+        font-size: 3.5vw;
+    }
+
+    #logo
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    #navigatie li
+    {
+        font-size: 4.5vw;
+    }
+
+    #dropdown
+    {
+        visibility: visible;
+        position: relative;
+        display: block;
+    }
+
+    #dropdown:hover #dd_content
+        {
+            display: block;
+        }
+
+    #dd_content
+    {
+        position: absolute;
+        background-color: #e9edc9;
+        padding: 10px;
+        border-radius: 20%;
+        box-shadow: 10px 5px 5px #ccd5ae;
+        font-size: 5vw;
+    }
+
+    #dd_content a:hover
+    {
+        color: #606c38;
+    }
+
+    #dd_content a
+    {   margin: 5px;
+
+    }
+
+
+    #acasa, #contact, #produse, #cos
+    {
+        visibility: hidden;
+    }
+
+    h1
+    {
+        font-size: 6vw;
+    }
+
+    h2
+    {
+        font-size: 5vw;
+    }
+
+    footer p
+    {
+        font-size: 3.5vw;
+    }
+
+    #logo2
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    #css
+    {
+        height: 8vw;
+        width: 12vw;
+    }
+
+}
+
+@media  screen and (max-width: 350px) {
+
+    #dd_content a
+    {
+        font-size: 6vw;
+    }
+}
+
+@media  screen and (max-width: 280px) {
+
+    #dd_content a
+    {
+        font-size: 7vw;
+    }
+}
